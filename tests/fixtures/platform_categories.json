@@ -1,0 +1,71 @@
+{
+ "batchcomplete": "",
+ "continue": {
+  "cmcontinue": "subcat|4152434144452047414d4553|245",
+  "continue": "-||"
+ },
+ "query": {
+  "categorymembers": [
+   {
+    "pageid": 21184,
+    "ns": 14,
+    "title": "Category:3DO games"
+   },
+   {
+    "pageid": 45901,
+    "ns": 14,
+    "title": "Category:Acorn Archimedes games"
+   },
+   {
+    "pageid": 60267,
+    "ns": 14,
+    "title": "Category:Acorn Electron games"
+   },
+   {
+    "pageid": 693045,
+    "ns": 14,
+    "title": "Category:ActiveX games"
+   },
+   {
+    "pageid": 20659,
+    "ns": 14,
+    "title": "Category:Adobe Flash games"
+   },
+   {
+    "pageid": 81139,
+    "ns": 14,
+    "title": "Category:Adobe Shockwave games"
+   },
+   {
+    "pageid": 507726,
+    "ns": 14,
+    "title": "Category:Amazon Luna games"
+   },
+   {
+    "pageid": 17313,
+    "ns": 14,
+    "title": "Category:Amiga games"
+   },
+   {
+    "pageid": 42116,
+    "ns": 14,
+    "title": "Category:Amstrad CPC games"
+   },
+   {
+    "pageid": 30045,
+    "ns": 14,
+    "title": "Category:Android games"
+   },
+   {
+    "pageid": 18318,
+    "ns": 14,
+    "title": "Category:Apple II games"
+   },
+   {
+    "pageid": 99519,
+    "ns": 14,
+    "title": "Category:Apple IIGS games"
+   }
+  ]
+ }
+}

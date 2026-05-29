@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytcrf"
+dynamic = ["version"]
+description = "Typed Python client for The Cutting Room Floor (tcrf.net) — cut/unused/regional/debug game content"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "JarbasAi", email = "jarbasai@mailfence.com" }]
+requires-python = ">=3.9"
+dependencies = ["requests>=2.28", "beautifulsoup4>=4.11", "unblock_requests"]
+keywords = ["tcrf", "cutting-room-floor", "game-preservation", "unused-content", "mediawiki", "scraper", "metadata"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Games/Entertainment",
+]
+
+[project.optional-dependencies]
+stealth = ["curl-cffi"]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/TigreGotico/pytcrf"
+Repository = "https://github.com/TigreGotico/pytcrf"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pytcrf*"]
+
+[tool.setuptools.dynamic]
+version = {attr = "pytcrf.version.__version__"}
+
+[tool.pytest.ini_options]
+markers = ["live: hits tcrf.net over the network (deselect with -m 'not live')"]

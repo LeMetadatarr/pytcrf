@@ -1,0 +1,441 @@
+{
+ "parse": {
+  "title": "Sonic the Hedgehog (Genesis)",
+  "pageid": 1583,
+  "sections": [
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Sub-Pages",
+    "number": "1",
+    "index": "1",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 1624,
+    "anchor": "Sub-Pages"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Header Space",
+    "number": "2",
+    "index": "2",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 1770,
+    "anchor": "Header_Space"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Level Select",
+    "number": "3",
+    "index": "3",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 2119,
+    "anchor": "Level_Select"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Debug Mode",
+    "number": "4",
+    "index": "4",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 3436,
+    "anchor": "Debug_Mode"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Revision 0 and Revision 1 on International Hardware",
+    "number": "4.1",
+    "index": "5",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 3522,
+    "anchor": "Revision_0_and_Revision_1_on_International_Hardware"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Revision 1 on a Japanese system",
+    "number": "4.2",
+    "index": "6",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 4699,
+    "anchor": "Revision_1_on_a_Japanese_system"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Invisible Credits",
+    "number": "5",
+    "index": "7",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 5205,
+    "anchor": "Invisible_Credits"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Unused Sprites",
+    "number": "6",
+    "index": "8",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 6688,
+    "anchor": "Unused_Sprites"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Sonic",
+    "number": "6.1",
+    "index": "9",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 6708,
+    "anchor": "Sonic"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Monitors",
+    "number": "6.2",
+    "index": "10",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 9552,
+    "anchor": "Monitors"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Zone-Specific",
+    "number": "6.3",
+    "index": "11",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 11790,
+    "anchor": "Zone-Specific"
+   },
+   {
+    "toclevel": 3,
+    "level": "4",
+    "line": "Green Hill Zone",
+    "number": "6.3.1",
+    "index": "12",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 11810,
+    "anchor": "Green_Hill_Zone"
+   },
+   {
+    "toclevel": 3,
+    "level": "4",
+    "line": "Marble Zone",
+    "number": "6.3.2",
+    "index": "13",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 14932,
+    "anchor": "Marble_Zone"
+   },
+   {
+    "toclevel": 3,
+    "level": "4",
+    "line": "Spring Yard Zone",
+    "number": "6.3.3",
+    "index": "14",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 17004,
+    "anchor": "Spring_Yard_Zone"
+   },
+   {
+    "toclevel": 3,
+    "level": "4",
+    "line": "Labyrinth Zone",
+    "number": "6.3.4",
+    "index": "15",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 17511,
+    "anchor": "Labyrinth_Zone"
+   },
+   {
+    "toclevel": 3,
+    "level": "4",
+    "line": "Star Light Zone",
+    "number": "6.3.5",
+    "index": "16",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 18009,
+    "anchor": "Star_Light_Zone"
+   },
+   {
+    "toclevel": 3,
+    "level": "4",
+    "line": "Unused Egg Capsule Machinery",
+    "number": "6.3.6",
+    "index": "17",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 18325,
+    "anchor": "Unused_Egg_Capsule_Machinery"
+   },
+   {
+    "toclevel": 3,
+    "level": "4",
+    "line": "Final Zone",
+    "number": "6.3.7",
+    "index": "18",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 19435,
+    "anchor": "Final_Zone"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Special Stage",
+    "number": "6.4",
+    "index": "19",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 19920,
+    "anchor": "Special_Stage"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Misc.",
+    "number": "6.5",
+    "index": "20",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 20768,
+    "anchor": "Misc."
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Null Objects",
+    "number": "7",
+    "index": "21",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 24643,
+    "anchor": "Null_Objects"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Empty Objects",
+    "number": "8",
+    "index": "22",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 24984,
+    "anchor": "Empty_Objects"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Obscured Sprites",
+    "number": "9",
+    "index": "23",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 25357,
+    "anchor": "Obscured_Sprites"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Act 4 Leftovers",
+    "number": "10",
+    "index": "24",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 26884,
+    "anchor": "Act_4_Leftovers"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Zone Leftovers",
+    "number": "11",
+    "index": "25",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 30165,
+    "anchor": "Zone_Leftovers"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Unused Warping Effect",
+    "number": "12",
+    "index": "26",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 31022,
+    "anchor": "Unused_Warping_Effect"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Unused Demo",
+    "number": "13",
+    "index": "27",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 31497,
+    "anchor": "Unused_Demo"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Misplaced Objects",
+    "number": "14",
+    "index": "28",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 32121,
+    "anchor": "Misplaced_Objects"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Unused Level Chunks",
+    "number": "15",
+    "index": "29",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 34135,
+    "anchor": "Unused_Level_Chunks"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Unused 2x2 Tiles",
+    "number": "16",
+    "index": "30",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 36719,
+    "anchor": "Unused_2x2_Tiles"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Exception Handler",
+    "number": "17",
+    "index": "31",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 39818,
+    "anchor": "Exception_Handler"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Unused Sounds",
+    "number": "18",
+    "index": "32",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 41171,
+    "anchor": "Unused_Sounds"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Unused Music Sequences",
+    "number": "19",
+    "index": "33",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 41831,
+    "anchor": "Unused_Music_Sequences"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Duplicate Credits Voices",
+    "number": "19.1",
+    "index": "34",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 42004,
+    "anchor": "Duplicate_Credits_Voices"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Unused Credits Voices",
+    "number": "19.2",
+    "index": "35",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 42208,
+    "anchor": "Unused_Credits_Voices"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Unused Credits Sequence",
+    "number": "19.3",
+    "index": "36",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 42358,
+    "anchor": "Unused_Credits_Sequence"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Unused Spring Yard Zone Percussion",
+    "number": "19.4",
+    "index": "37",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 42854,
+    "anchor": "Unused_Spring_Yard_Zone_Percussion"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Unused Green Hill Voice",
+    "number": "19.5",
+    "index": "38",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 43429,
+    "anchor": "Unused_Green_Hill_Voice"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Unused Boss Voices",
+    "number": "19.6",
+    "index": "39",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 43764,
+    "anchor": "Unused_Boss_Voices"
+   },
+   {
+    "toclevel": 2,
+    "level": "3",
+    "line": "Unused Act Clear Trumpet",
+    "number": "19.7",
+    "index": "40",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 44274,
+    "anchor": "Unused_Act_Clear_Trumpet"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Unused Code",
+    "number": "20",
+    "index": "41",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 44647,
+    "anchor": "Unused_Code"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "Unused Palettes",
+    "number": "21",
+    "index": "42",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 46442,
+    "anchor": "Unused_Palettes"
+   },
+   {
+    "toclevel": 1,
+    "level": "2",
+    "line": "References",
+    "number": "22",
+    "index": "43",
+    "fromtitle": "Sonic_the_Hedgehog_(Genesis)",
+    "byteoffset": 46959,
+    "anchor": "References"
+   }
+  ],
+  "wikitext": {
+   "*": "<languages/>\n<translate>\n<!--T:1-->\n{{bob\n | bobscreen= Sonic_the_Hedgehog-title.png\n | title= Sonic the Hedgehog\n | aka= Baramdori Sonic (KR)\n | developer= Sonic Team\n|developerref=<ref>https://www.mobygames.com/game/6579/sonic-the-hedgehog/releases/</ref>\n | publishers= {{publisher|Sega|ref=<ref name=\"sehadai\">https://www.sega.jp/fb/segahard/md/soft.html</ref>}} (JP/US/EU/AU), {{publisher|Samsung}} (KR), {{publisher|Tec Toy|ref=<ref name=br>[https://retrocdn.net/images/9/9c/AcaoGames_BR_004.pdf Select - Lançamentos Nacionais: Sonic the Hedgehog] - ''Ação Games'', Issue 4, August 1991</ref>}} (BR)\n | system= Genesis\n}}\n"
+  }
+ }
+}
