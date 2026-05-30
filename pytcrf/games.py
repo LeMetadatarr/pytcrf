@@ -221,7 +221,7 @@ class TCRF:
     Example::
 
         import pytcrf
-        client = pytcrf.TCRF(delay=1.5)
+        client = pytcrf.TCRF(delay=10.0)
         g = client.get_game("Sonic the Hedgehog (Genesis)")
     """
 
@@ -229,7 +229,7 @@ class TCRF:
                  flaresolverr_timeout_ms: Optional[int] = None,
                  wayback: bool = False,
                  wayback_fallback: Optional[bool] = None,
-                 delay: float = 1.0) -> None:
+                 delay: float = 10.0) -> None:
         if isinstance(transport, Transport):
             self.transport = transport
         else:

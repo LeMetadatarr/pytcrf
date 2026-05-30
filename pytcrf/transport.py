@@ -77,7 +77,7 @@ class Transport:
     Example::
 
         from pytcrf import Transport
-        t = Transport(delay=1.5)
+        t = Transport(delay=10.0)
         data = t.api({"action": "query", "meta": "siteinfo"})
     """
 
@@ -85,7 +85,7 @@ class Transport:
                  flaresolverr_url: Optional[str] = None,
                  flaresolverr_timeout_ms: Optional[int] = None,
                  wayback_fallback: Optional[bool] = None,
-                 delay: float = 1.0) -> None:
+                 delay: float = 10.0) -> None:
         if mode is not None and mode.lower() not in _VALID_MODES:
             raise ValueError(
                 f"mode must be one of {sorted(_VALID_MODES)} or None, got {mode!r}")
