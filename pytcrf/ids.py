@@ -1,9 +1,8 @@
-"""Converters from pytcrf models to ``ExternalIds.extra`` dicts.
+"""Converters from pytcrf models to flat ``str -> str`` external-ID dicts.
 
-Used by any integration that serialises TCRF data into the mediavocab
-``ExternalIds.extra`` key-space. The canonical anchor is ``tcrf_title`` — the
-MediaWiki page title, which is the stable identity of a TCRF article (the same
-key pyromhacking joins against for game-preservation cross-references).
+The canonical anchor is ``tcrf_title`` — the MediaWiki page title, which is the
+stable identity of a TCRF article (the same key pyromhacking joins against for
+game-preservation cross-references).
 
 Key namespace
 -------------
@@ -25,7 +24,7 @@ if TYPE_CHECKING:
 
 
 def game_to_extra(game: "GamePage") -> Dict[str, str]:
-    """Convert a :class:`~pytcrf.models.GamePage` to an ``extra`` dict."""
+    """Convert a :class:`~pytcrf.models.GamePage` to a flat ``str -> str`` external-ID dict."""
     extra: Dict[str, str] = {
         "tcrf_title": game.title,
         "tcrf_url": game.url,

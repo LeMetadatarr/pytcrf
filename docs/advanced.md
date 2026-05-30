@@ -60,7 +60,7 @@ kwargs win.
 from pytcrf import Transport, TCRF
 
 Transport(mode="wayback")                              # force the archive
-Transport(flaresolverr_url="http://192.168.1.116:8191")  # via FlareSolverr
+Transport(flaresolverr_url="http://localhost:8191")  # via FlareSolverr
 client = TCRF(delay=2.0)                               # 2 s between calls
 ```
 

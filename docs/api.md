@@ -86,9 +86,11 @@ Methods: `to_dict()`, `from_api(node)`.
 
 ### `pytcrf.ids.game_to_extra(game) -> dict`
 
-Convert a `GamePage` to a mediavocab `ExternalIds.extra` dict. Canonical anchor
-is `tcrf_title`. Other keys: `tcrf_url`, `tcrf_pageid`, `tcrf_platforms` (JSON),
-`tcrf_sections` (JSON), `tcrf_notable_sections` (JSON).
+Convert a `GamePage` to a flat `str -> str` dict of namespaced external IDs.
+Anchor key is `tcrf_id` (alias `tcrf_title`). Other keys: `tcrf_url`,
+`tcrf_pageid`, `tcrf_platforms` (JSON), `tcrf_sections` (JSON),
+`tcrf_notable_sections` (JSON). Suitable for cross-referencing a TCRF article
+against other sources.
 
 ### `pytcrf.ids.canonical_id(game) -> str`
 

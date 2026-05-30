@@ -1,4 +1,4 @@
-"""Convert a game page to a mediavocab ExternalIds.extra dict (tcrf_title anchor).
+"""Convert a game page to a flat external-ID dict (anchor key: tcrf_title).
 
     python examples/05_external_ids.py ["Game Title"]
 """

@@ -82,5 +82,5 @@ def test_client_kwargs(monkeypatch):
     _clear_env(monkeypatch)
     import pytcrf
     assert pytcrf.TCRF(wayback=True).transport._resolved_mode() == "wayback"
-    c = pytcrf.TCRF(flaresolverr_url="http://192.168.1.116:8191")
+    c = pytcrf.TCRF(flaresolverr_url="http://localhost:8191")
     assert c.transport._resolved_mode() == "flaresolverr"

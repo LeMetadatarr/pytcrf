@@ -14,7 +14,7 @@ API**. Game-preservation corpus; pairs with `pyromhacking`.
 | `pytcrf/_parse.py` | section-HTML → text, infobox-wikitext → platforms (BeautifulSoup) |
 | `pytcrf/models.py` | `GamePage`, `Section`, `CategoryMember` dataclasses |
 | `pytcrf/games.py` | lookup + `Category:Games` enumeration; `TCRF` client |
-| `pytcrf/ids.py` | `ExternalIds.extra` converter; anchor `tcrf_title` |
+| `pytcrf/ids.py` | flat external-ID dict converter; anchor key `tcrf_title` |
 | `pytcrf/dataset.py` | `(game, platform, section, text)` rows + `export_jsonl` |
 | `pytcrf/version.py` | version (do not edit) |
 | `tests/` | offline fixture tests + one live smoke (`-m live`) |
