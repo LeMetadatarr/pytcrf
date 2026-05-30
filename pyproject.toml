@@ -22,6 +22,7 @@ classifiers = [
 ]
 
 [project.optional-dependencies]
+anon = ["anon_requests"]
 stealth = ["curl-cffi"]
 test = ["pytest"]
 
