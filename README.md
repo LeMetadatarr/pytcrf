@@ -19,14 +19,15 @@ pip install pytcrf[stealth]   # adds curl-cffi — recommended (see below)
 pip install pytcrf[test]      # adds pytest
 ```
 
-> **Anti-bot:** TCRF guards its API two ways. (1) A *referer interstitial* — any
-> request without a `Referer` pointing back at the requested page is answered
-> with a "verify you aren't a bot" page; pytcrf sends a self-referencing referer
-> on every call, exactly what a browser sends on the "continue" click. (2) A
-> *scraper trap* — `list=allpages` returns a multi-megabyte garbage payload, so
-> pytcrf enumerates the `Category:Games` tree instead. Everything routes through
-> `unblock_requests` (curl_cffi TLS impersonation, FlareSolverr, Wayback). See
-> [docs/advanced.md](docs/advanced.md).
+> **Site behaviours handled:** TCRF has two documented quirks. (1) A *referer
+> interstitial* — requests without a `Referer` header pointing at the requested
+> page receive a 403 asking the user to click "continue"; pytcrf sends the
+> self-referencing referer on every call, exactly as a browser does. (2) A
+> *scraper trap* — `list=allpages` returns a multi-megabyte
+> `"invalid response for scrapers"` payload at HTTP 200; pytcrf enumerates the
+> `Category:Games` tree instead and raises `ScraperBlocked` if the trap is hit.
+> Everything routes through `unblock_requests` (`CloudflareSession`) for uniform,
+> resilient HTTP. See [docs/advanced.md](docs/advanced.md).
 
 ## 30-second tour
 

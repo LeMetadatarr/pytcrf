@@ -1,8 +1,7 @@
 # Transport, the interstitial, and the scraper trap
 
 pytcrf talks to one surface — the TCRF MediaWiki JSON API at
-`https://tcrf.net/api.php` — but TCRF guards it more aggressively than a typical
-wiki. Two defences matter.
+`https://tcrf.net/api.php`. Two documented site behaviours require handling.
 
 ## 1. The referer interstitial
 
@@ -60,7 +59,7 @@ kwargs win.
 from pytcrf import Transport, TCRF
 
 Transport(mode="wayback")                              # force the archive
-Transport(flaresolverr_url="http://localhost:8191")  # via FlareSolverr
+Transport(flaresolverr_url="http://flaresolverr:8191")  # via FlareSolverr
 client = TCRF(delay=2.0)                               # 2 s between calls
 ```
 

@@ -1,23 +1,23 @@
 """HTTP transport for The Cutting Room Floor (``tcrf.net``).
 
 pytcrf talks to a single surface: the **MediaWiki JSON API** at
-``https://tcrf.net/api.php`` (``action=query`` / ``action=parse``). It is a
-clean JSON endpoint — but the wiki sits behind two layers of anti-bot defence:
+``https://tcrf.net/api.php`` (``action=query`` / ``action=parse``). Two
+documented site behaviours require special handling:
 
 1. A **referer interstitial**. Any request without a ``Referer`` header that
    points back at the page being requested is answered with a small "Request
    Interrupted / verify you aren't an automated bot" HTML page (HTTP 403). The
-   site itself spells out the fix: the page is reachable when the request
-   carries a referer. This transport sends a self-referencing ``Referer`` header
-   (equal to the request URL) on every call, which is exactly what a browser
-   sends when a user clicks the "continue" link.
+   site itself names the cause: the page is reachable when the request carries a
+   referer. This transport sends a self-referencing ``Referer`` header (equal to
+   the request URL) on every call, which is exactly what a browser sends when a
+   user clicks the "continue" link.
 2. A **per-module scraper trap**. A few enumeration modules (notably
    ``list=allpages``) answer a multi-megabyte ``"invalid response for
-   scrapers"`` garbage payload at HTTP 200. pytcrf never uses those modules —
-   enumeration goes through ``list=categorymembers`` (the ``Category:Games``
-   tree), which is served normally. :meth:`Transport.api` defensively rejects a
-   scraper-trap body so a blocked module fails loudly instead of buffering tens
-   of megabytes.
+   scrapers"`` payload at HTTP 200 rather than an error. pytcrf never uses those
+   modules — enumeration goes through ``list=categorymembers`` (the
+   ``Category:Games`` tree), which is served normally. :meth:`Transport.api`
+   defensively rejects a scraper-trap body so a blocked module fails loudly
+   instead of buffering tens of megabytes.
 
 Everything is routed through the org transport
 :class:`unblock_requests.CloudflareSession` — a drop-in ``requests.Session``

@@ -6,8 +6,8 @@
 pip install pytcrf[stealth]
 ```
 
-The `stealth` extra pulls in `curl-cffi` for TLS impersonation — strongly
-recommended, since TCRF actively fingerprints non-browser clients.
+The `stealth` extra pulls in `curl-cffi` for TLS impersonation — recommended
+for reliable connections and consistent with how browsers reach the API.
 
 ## A single game
 
@@ -78,4 +78,4 @@ print(game_to_extra(game)["tcrf_title"])   # the canonical external-id anchor
 ```
 
 Next: [api.md](api.md) for the full surface, [dataset.md](dataset.md) to build a
-corpus, [advanced.md](advanced.md) for transport and the anti-bot defences.
+corpus, [advanced.md](advanced.md) for transport, the Referer requirement, and the scraper trap.

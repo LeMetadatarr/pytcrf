@@ -20,7 +20,7 @@ def main() -> None:
 
     # via a FlareSolverr proxy
     print("flaresolverr mode:",
-          Transport(flaresolverr_url="http://localhost:8191")._resolved_mode())
+          Transport(flaresolverr_url="http://flaresolverr:8191")._resolved_mode())
 
     # the scraper-trap guard in action (no real network needed to explain it)
     print("\nlist=allpages is trapped by tcrf.net; pytcrf raises ScraperBlocked")
