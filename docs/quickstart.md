@@ -6,8 +6,8 @@
 pip install pytcrf[stealth]
 ```
 
-The `stealth` extra pulls in `curl-cffi` for TLS impersonation — recommended
-for reliable connections and consistent with how browsers reach the API.
+The `stealth` extra adds `curl-cffi` for TLS impersonation. Use it for
+reliable connections, since it matches how a browser reaches the API.
 
 ## A single game
 
@@ -28,7 +28,7 @@ for s in game.notable_sections:
     print(s.line)
 ```
 
-`get_game` fetches the section *structure* only (one API call). To pull the
+`get_game` fetches only the section structure (one API call). To get the
 plain text of every section (one call per section), ask for it:
 
 ```python
@@ -51,7 +51,8 @@ for g in pytcrf.iter_games(platforms=["NES"], per_platform_limit=5):
 ```
 
 `iter_games` is a generator that walks the `Category:Games` tree. Use
-`per_platform_limit` while exploring so you don't enumerate thousands of pages.
+`per_platform_limit` while you explore, so you do not enumerate thousands of
+pages.
 
 ## A shared, polite client
 
@@ -64,7 +65,8 @@ for g in client.iter_games(platforms=["Genesis"], per_platform_limit=3):
     print(full.title, len(full.notable_sections), "notable sections")
 ```
 
-One `TCRF` shares a single transport (and its delay) across the whole crawl.
+One `TCRF` instance shares a single transport, and its delay, across the
+whole crawl.
 
 ## Serialising
 
@@ -77,5 +79,9 @@ print(json.dumps(game.to_dict())[:200])
 print(game_to_extra(game)["tcrf_title"])   # the canonical external-id anchor
 ```
 
-Next: [api.md](api.md) for the full surface, [dataset.md](dataset.md) to build a
-corpus, [advanced.md](advanced.md) for transport, the Referer requirement, and the scraper trap.
+Next: [api.md](api.md) for the full surface, [dataset.md](dataset.md) to
+build a corpus, and [advanced.md](advanced.md) for transport, the referer
+requirement, and the scraper trap.
+
+---
+[Home](../README.md) · [API reference →](api.md)

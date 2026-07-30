@@ -1,8 +1,8 @@
 # The Category:Games tree
 
-pytcrf enumerates games through TCRF's category graph, **not** `list=allpages`
-(which the wiki traps for scrapers — see [advanced.md](advanced.md)). Knowing the
-tree shape makes enumeration predictable.
+pytcrf enumerates games through TCRF's category graph, not `list=allpages`
+(the wiki traps that call for scrapers — see [advanced.md](advanced.md)).
+Knowing the tree shape makes enumeration predictable.
 
 ## Shape
 
@@ -22,9 +22,9 @@ Category:Games
   └─ …
 ```
 
-`Category:Games` itself contains **only subcategories** — no game pages live
+`Category:Games` itself holds only subcategories. No game page lives
 directly under it. The reliable path to actual pages is
-`Games by platform → <platform> games → page`, which is also why pytcrf can
+`Games by platform → <platform> games → page`, which also lets pytcrf
 attach a platform to every game for free.
 
 ## Walking it
@@ -45,8 +45,9 @@ for g in pytcrf.iter_games(platforms=["Genesis", "NES"], per_platform_limit=5):
     print(g.platforms, g.title)
 ```
 
-A game released on several systems shows up under multiple platform categories;
-`iter_games` yields it **once** with every platform merged into `g.platforms`.
+A game released on several systems shows up under multiple platform
+categories. `iter_games` yields it once, with every platform merged into
+`g.platforms`.
 
 ## Other axes
 
@@ -66,6 +67,9 @@ for m in pytcrf.iter_category_members("Category:Prototype versions",
 
 ## Continuation
 
-The MediaWiki API caps `cmlimit` at 500; pytcrf follows the `continue` token
-transparently, so the iterators yield the full membership without you handling
-paging. Use `limit` / `per_platform_limit` to stop early while exploring.
+The MediaWiki API caps `cmlimit` at 500. pytcrf follows the `continue` token
+for you, so the iterators yield the full membership without you handling
+paging. Use `limit` or `per_platform_limit` to stop early while you explore.
+
+---
+[← API reference](api.md) · [Home](../README.md) · [Transport and the scraper trap →](advanced.md)
