@@ -89,7 +89,7 @@ content). Methods: `to_dict()`, `from_api(node)`.
 ### `pytcrf.ids.game_to_extra(game) -> dict`
 
 Convert a `GamePage` to a flat `str -> str` dict of namespaced external IDs.
-The anchor key is `tcrf_id` (alias `tcrf_title`). Other keys: `tcrf_url`,
+The anchor key is `tcrf_title`. Other keys: `tcrf_url`,
 `tcrf_pageid`, `tcrf_platforms` (JSON), `tcrf_sections` (JSON),
 `tcrf_notable_sections` (JSON). Use this dict to cross-reference a TCRF
 article against other sources.
@@ -100,12 +100,12 @@ The `tcrf_title` anchor.
 
 ## Transport
 
-### `Transport(*, mode=None, flaresolverr_url=None, flaresolverr_timeout_ms=None, wayback_fallback=None, delay=1.0)`
+### `Transport(*, mode=None, flaresolverr_url=None, flaresolverr_timeout_ms=None, wayback_fallback=None, delay=10.0)`
 
 See [advanced.md](advanced.md). pytcrf raises `ScraperBlocked` when TCRF
 serves its anti-scraper trap for a module.
 
-### `TCRF(transport=None, *, flaresolverr_url=None, wayback=False, delay=1.0)`
+### `TCRF(transport=None, *, flaresolverr_url=None, flaresolverr_timeout_ms=None, wayback=False, wayback_fallback=None, delay=10.0)`
 
 A high-level client that binds every method to one configured transport.
 

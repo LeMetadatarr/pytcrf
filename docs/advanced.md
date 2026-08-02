@@ -76,7 +76,7 @@ client = TCRF(delay=2.0)                               # 2 s between calls
 
 ## Politeness
 
-`Transport(delay=…)` (default 1.0 s) enforces a minimum gap between API
+`Transport(delay=…)` (default 10.0 s) enforces a minimum gap between API
 calls. A section-text corpus build makes one call per section per page, so
 keep the delay up and treat a full crawl as a homelab job. See
 [PROVENANCE.md](../PROVENANCE.md).
