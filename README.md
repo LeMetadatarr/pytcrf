@@ -9,7 +9,7 @@ pytcrf talks directly to the TCRF MediaWiki JSON API (`tcrf.net/api.php`)
 behind typed dataclasses. It enumerates games through the `Category:Games`
 tree, parses each article's section structure, and exports a
 game-preservation corpus of `(game, platform, section, text)` rows. It is the
-metadata counterpart to [pyromhacking](https://github.com/TigreGotico/pyromhacking).
+metadata counterpart to [pyromhacking](https://github.com/LeMetadatarr/pyromhacking).
 
 ## Install
 
@@ -92,7 +92,7 @@ A game-preservation corpus that pairs with pyromhacking. See
 
 ## Related projects
 
-- [pyromhacking](https://github.com/TigreGotico/pyromhacking): the community
+- [pyromhacking](https://github.com/LeMetadatarr/pyromhacking): the community
   romhacking counterpart: what was changed back in or modified, versus what
   TCRF documents as removed.
 

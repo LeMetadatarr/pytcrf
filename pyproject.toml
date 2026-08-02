@@ -27,8 +27,8 @@ stealth = ["curl-cffi"]
 test = ["pytest"]
 
 [project.urls]
-Homepage = "https://github.com/TigreGotico/pytcrf"
-Repository = "https://github.com/TigreGotico/pytcrf"
+Homepage = "https://github.com/LeMetadatarr/pytcrf"
+Repository = "https://github.com/LeMetadatarr/pytcrf"
 
 [tool.setuptools.packages.find]
 where = ["."]
