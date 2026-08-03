@@ -58,3 +58,29 @@ def test_gamepage_to_dict_roundtrip_serialisable():
     json.dumps(d)  # must be JSON-serialisable
     assert d["title"] == page.title
     assert len(d["sections"]) == len(page.sections)
+
+
+def test_gamepage_from_parse_empty_node():
+    page = GamePage.from_parse({})
+    assert page.title == ""
+    assert page.pageid is None
+    assert page.platforms == []
+    assert page.sections == []
+    assert page.wikitext is None
+
+
+def test_category_member_from_api_missing_pageid():
+    member = CategoryMember.from_api({"title": "Category:Orphaned"})
+    assert member.pageid is None
+    assert member.ns == 0
+    assert not member.is_subcategory
+
+
+def test_game_to_extra_minimal_page_has_no_optional_keys():
+    page = GamePage(title="Untitled Prototype")
+    extra = game_to_extra(page)
+    assert extra["tcrf_title"] == "Untitled Prototype"
+    assert "tcrf_pageid" not in extra
+    assert "tcrf_platforms" not in extra
+    assert "tcrf_sections" not in extra
+    assert "tcrf_notable_sections" not in extra
